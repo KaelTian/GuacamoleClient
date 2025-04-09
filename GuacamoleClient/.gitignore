@@ -1,0 +1,71 @@
+### General ###
+.DS_Store            # macOS 文件属性
+*.swp                # Vim 临时文件
+*.swo                # Vim 临时文件
+*.log                # 日志文件
+*.tmp                # 临时文件
+*.bak                # 备份文件
+*.pid                # 进程 ID 文件
+*.seed               # 种子文件（如 MongoDB）
+*.env                # 环境变量（通常需要手动管理）
+.env.local           # 本地环境变量（通常包含敏感信息）
+.env.development     # 开发环境变量
+.env.test            # 测试环境变量
+.env.production      # 生产环境变量
+npm-debug.log*       # npm 调试日志
+yarn-debug.log*      # Yarn 调试日志
+yarn-error.log*      # Yarn 错误日志
+.idea/               # JetBrains IDE (WebStorm, IntelliJ)
+.vscode/             # VS Code 配置（但可提交推荐的扩展配置）
+*.suo                # Visual Studio 用户选项
+*.user               # Visual Studio 用户文件
+*.code-workspace     # VS Code 工作区文件
+
+### Node.js / JavaScript ###
+node_modules/        # npm/Yarn 依赖
+dist/                # 打包后的代码（如 Webpack/Vite）
+build/               # 构建输出（如 React、Next.js）
+.cache/              # 缓存目录（如 Parcel, Babel）
+.next/               # Next.js 构建目录
+.nuxt/               # Nuxt.js 构建目录
+.serverless/         # Serverless 部署
+.coverage/           # 测试覆盖率报告
+*.tsbuildinfo        # TypeScript 构建信息
+
+### C# / .NET ###
+[Bb]in/              # 编译输出目录（不区分大小写）
+[Oo]bj/              # 中间编译文件（不区分大小写）
+*.userprefs          # Visual Studio 用户首选项
+*.suo                # Visual Studio 用户选项（已包含在 General 部分）
+*.cache              # 编译缓存
+*.ilk                # 中间链接文件
+*.pdb                # 程序调试数据库
+*.exe                # 可执行文件
+*.dll                # 动态链接库
+*.nupkg              # NuGet 包
+packages/            # NuGet 包恢复目录（如果使用包还原，可删除此行）
+[Tt]est[Rr]esult*/   # 单元测试结果
+*.VisualState.xml    # XAML 设计器文件
+_ReSharper*/         # ReSharper 缓存
+*.dotCover           # dotCover 覆盖率报告
+*.pyc                # Python 编译文件（冗余，已移除 Python 部分）
+*.pubxml             # MSDeploy 发布配置文件
+
+### Database ###
+*.db                 # SQLite 数据库
+*.sqlite             # SQLite 数据库
+*.dump               # 数据库转储文件
+*.rdb                # Redis 数据库
+
+### macOS ###
+._*                  # macOS 资源派生文件
+.Spotlight-V100      # macOS 索引文件
+.Trashes             # macOS 回收站
+
+### Windows ###
+Thumbs.db            # Windows 缩略图缓存
+ehthumbs.db          # Windows 缩略图缓存
+Desktop.ini          # Windows 文件夹配置
+
+### Linux ###
+*~                   # Linux 临时文件
