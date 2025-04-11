@@ -6,7 +6,7 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
+import { onMounted,onUnmounted } from 'vue';
 import Guacamole from 'guacamole-common-js';
 import { ref } from 'vue';
 import { getTokens } from '../common/api';
@@ -74,14 +74,10 @@ const connect = async () => {
 onMounted(() => {
   connect();
 });
-// Disconnect on close
-window.onunload = function() {
-    if (client.value) client.value.disconnect();
-};
 
-// onUnmounted(() => {
-//   if (client.value) client.value.disconnect();
-// });
+onUnmounted(() => {
+    if (client.value) client.value.disconnect();
+});
 
 </script>
 
